@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تاريخ الأردن</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>تاريخ الأردن</h1>
+      <p>موقع تعليمي مختصر عن أبرز مراحل تطور الأردن عبر العصور</p>
+      <button id="modeToggle" class="btn">تبديل الوضع الليلي</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>نبذة سريعة</h2>
+      <p>
+        يقع الأردن في منطقة كانت دائمًا ملتقى حضارات وطرق تجارة. لهذا السبب تركت
+        الحضارات القديمة والإسلامية والعثمانية بصمات واضحة على تاريخ البلاد وهوية المجتمع.
+      </p>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <h2>الخط الزمني</h2>
+        <button id="sortBtn" class="btn btn-small">عكس ترتيب الأحداث</button>
+      </div>
+      <ul id="timeline" class="timeline"></ul>
+    </section>
+
+    <section class="card quiz">
+      <h2>سؤال سريع</h2>
+      <p>متى أُعلن استقلال المملكة الأردنية الهاشمية؟</p>
+      <div class="answers" id="answers">
+        <button class="answer" data-correct="false">1921</button>
+        <button class="answer" data-correct="true">1946</button>
+        <button class="answer" data-correct="false">1952</button>
+      </div>
+      <p id="quizResult" class="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">تم إعداد هذا الموقع باستخدام HTML + CSS + JavaScript.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
